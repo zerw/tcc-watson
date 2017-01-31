@@ -1,0 +1,25 @@
+{
+    "Params": {
+        "DevMode": {
+            "Instrumentation": {
+                "command": "",
+                "env": {
+                    "BLUEMIX_APP_MGMT_ENABLE": "devconsole+shell+inspector",
+                    "NODE_ENV": "development"
+                },
+                "memory": "384M"
+            },
+            "Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager"
+        },
+        "Name": "text-to-speech-nodejs-tccrv-1811",
+        "Target": {
+            "Org": "TCC-Unioeste-Chen",
+            "Space": "Teste de Bluemix",
+            "Url": "https://api.ng.bluemix.net"
+        },
+        "Timeout": 60
+    },
+    "Path": "",
+    "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+    "Type": "Cloud Foundry"
+}

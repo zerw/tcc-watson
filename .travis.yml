@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- 4
+sudo: true
+env:
+  global:
+  - CF_APP=tcc-watson
+  - CF_API=https://api.ng.bluemix.net
+  - CF_USERNAME=hoschen@gmail.com
+  - CF_ORGANIZATION=Unioeste
+  - CF_SPACE=dev
+  
+before_deploy: npm install -g cf-blue-green
+deploy:
+  provider: script
+  script: cf-blue-green-travis
+  on:
+    branch: master

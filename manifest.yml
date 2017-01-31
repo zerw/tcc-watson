@@ -1,0 +1,15 @@
+---
+declared-services:
+  text-to-speech-service:
+    label: tcc-watson
+    plan: standard
+applications:
+- services:
+  - tcc-watson
+  name: tcc-watson
+  path: .
+  memory: 512M
+  host: tcc-watson
+  command: npm install express
+    np install body-parser
+
