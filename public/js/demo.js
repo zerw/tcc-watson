@@ -37,6 +37,7 @@ $(document).ready(function() {
     });
   }
 
+	
   function onCanplaythrough() {
     console.log('onCanplaythrough');
     var audio = $('.audio').get(0);
